@@ -2,7 +2,7 @@ import Table from '../../components/dashboard/table';
 
 const Dashboard = () => {
     return (
-        <section>
+        <section style={{ textAlign: 'center' }}>
             <h1>Messages from contacs</h1>
             <Table />
         </section>

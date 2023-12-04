@@ -37,6 +37,11 @@
     background-color: var(--color-grey-50);
     resize: none;
   }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .controls {
     display: flex;

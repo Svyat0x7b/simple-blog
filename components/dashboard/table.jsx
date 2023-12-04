@@ -18,7 +18,10 @@ const Table = () => {
         fetchMessages();
     }, []);
 
-    if (!messages || messages.length === 0) {
+    if (!messages) {
+        return <p>Loading...</p>;
+    }
+    if (messages.length === 0) {
         return <p>There is no messages!</p>;
     }
     return (

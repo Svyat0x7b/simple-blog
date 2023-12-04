@@ -113,16 +113,18 @@ const ContactForm = () => {
         <section className={classes.contact} onSubmit={sendMessageHandler}>
             <h1>Contact me</h1>
             <form className={classes.form}>
-                <label for="email">
-                    Your e-mail
-                    <input type="email" name="email" ref={emailRef} />
-                    {errors.email && <p className={classes.error}>Enter the valid email!</p>}
-                </label>
-                <label for="name">
-                    Your name
-                    <input type="text" name="name" ref={nameRef} />
-                    {errors.name && <p className={classes.error}>Enter the valid name!</p>}
-                </label>
+                <div className={classes.wrapper}>
+                    <label for="email">
+                        Your e-mail
+                        <input type="email" name="email" ref={emailRef} />
+                        {errors.email && <p className={classes.error}>Enter the valid email!</p>}
+                    </label>
+                    <label for="name">
+                        Your name
+                        <input type="text" name="name" ref={nameRef} />
+                        {errors.name && <p className={classes.error}>Enter the valid name!</p>}
+                    </label>
+                </div>
                 <label for="message">
                     Your question
                     <textarea type="text" name="message" ref={msgRef} />
